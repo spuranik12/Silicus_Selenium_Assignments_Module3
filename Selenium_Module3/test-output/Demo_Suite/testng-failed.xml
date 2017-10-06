@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [Demo_Suite]">
+  <test name="OrangeHRM_Login(failed)">
+    <classes>
+      <class name="testClasses.RecruitmentPageTest">
+        <methods>
+          <include name="openVacancies"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testClasses.RecruitmentPageTest -->
+      <class name="testClasses.LoginPageTest">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testClasses.LoginPageTest -->
+    </classes>
+  </test> <!-- OrangeHRM_Login(failed) -->
+</suite> <!-- Failed suite [Demo_Suite] -->
