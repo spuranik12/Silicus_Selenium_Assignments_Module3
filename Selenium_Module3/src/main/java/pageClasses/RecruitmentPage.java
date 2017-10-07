@@ -21,14 +21,12 @@ public class RecruitmentPage extends BasePage
 		super(driver);
 	}
 	
-	public void clickOnRecruitmentLink() 
-	{
+	public void clickOnRecruitmentLink() {
 		actions.applyDefaultImplicitWait();
 		recruitmentLink.click();
 	}
 	
-	public void clickOnVacancyLink()
-	{
+	public void clickOnVacancyLink(){
 		actions.applyDefaultImplicitWait();
 		vacancyLink.click();
 	}

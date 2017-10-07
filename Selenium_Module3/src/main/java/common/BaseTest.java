@@ -2,13 +2,14 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod; 
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest 
 {
-	protected static WebDriver driver;
+	public static WebDriver driver = null;
 	
-	@BeforeMethod 
+	@BeforeTest
 	public void openBrowser()
 	{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/allDrivers/chromedriver.exe");
@@ -17,6 +18,7 @@ public class BaseTest
 		driver.get("http://opensource.demo.orangehrmlive.com/");
 	}
 	
+	@AfterTest
 	public void closeBrowser()
 	{
 		driver.quit();

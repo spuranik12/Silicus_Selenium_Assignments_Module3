@@ -11,7 +11,7 @@ public class RecruitmentPageTest extends BaseTest
 	@Test 
 	public void openVacancies()
 	{
-		RecruitmentPage rp = new RecruitmentPage(driver); 
+		RecruitmentPage rp = new RecruitmentPage(driver);
 		rp.clickOnRecruitmentLink();
 		rp.clickOnVacancyLink();
 		Assert.assertTrue(rp.verifyVacancyTab());

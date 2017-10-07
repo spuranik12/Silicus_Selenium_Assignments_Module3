@@ -5,12 +5,14 @@
     <classes>
       <class name="testClasses.RecruitmentPageTest">
         <methods>
+          <include name="closeBrowser"/>
           <include name="openVacancies"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- testClasses.RecruitmentPageTest -->
       <class name="testClasses.LoginPageTest">
         <methods>
+          <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- testClasses.LoginPageTest -->

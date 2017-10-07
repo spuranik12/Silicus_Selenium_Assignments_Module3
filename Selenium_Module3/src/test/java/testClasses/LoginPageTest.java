@@ -10,7 +10,7 @@ import pageClasses.LoginPage;
 import common.BaseTest;
 
 public class LoginPageTest extends BaseTest
-{
+{ 
 	
 	@DataProvider(name = "Login Authentication")
 	public static Object[][] credentials(){
