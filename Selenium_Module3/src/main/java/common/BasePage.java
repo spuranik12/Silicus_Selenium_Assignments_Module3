@@ -9,6 +9,6 @@ public class BasePage
 	
 	protected BasePage(WebDriver driver){
 		PageFactory.initElements(driver, this);
-		actions = new BrowserAction(driver);
+		actions = new BrowserAction(driver); 
 	}
 }

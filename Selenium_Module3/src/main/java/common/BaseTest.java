@@ -5,13 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-public class BaseTest 
-{
+public class BaseTest {
+	
 	public static WebDriver driver = null;
 	
 	@BeforeTest
-	public void openBrowser()
-	{
+	public void openBrowser(){
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/allDrivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -19,8 +18,7 @@ public class BaseTest
 	}
 	
 	@AfterTest
-	public void closeBrowser()
-	{
-		driver.quit();
+	public void closeBrowser(){
+		driver.quit(); 
 	}
 }

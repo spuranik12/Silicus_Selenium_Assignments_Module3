@@ -3,19 +3,17 @@
 <suite name="Failed suite [Test]">
   <test name="OrangeHRM_Login(failed)">
     <classes>
-      <class name="testClasses.RecruitmentPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openVacancies"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.RecruitmentPageTest -->
       <class name="testClasses.LoginPageTest">
         <methods>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- testClasses.LoginPageTest -->
+      <class name="testClasses.RecruitmentPageTest">
+        <methods>
+          <include name="addNewVacancy" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testClasses.RecruitmentPageTest -->
     </classes>
   </test> <!-- OrangeHRM_Login(failed) -->
 </suite> <!-- Failed suite [Test] -->

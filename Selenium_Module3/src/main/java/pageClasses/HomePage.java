@@ -6,18 +6,16 @@ import org.openqa.selenium.support.FindBy;
 
 import common.BasePage;
 
-public class HomePage extends BasePage
-{
+public class HomePage extends BasePage{
 	
 	@FindBy(css = "#welcome")
 	private WebElement loggedInUser; 
 	
-	public HomePage(WebDriver driver) {
+	public HomePage(WebDriver driver){
 		super(driver);
 	}
 	
-	public boolean getLoggedInUsername()
-	{
+	public boolean getLoggedInUsername(){
 		actions.applyDefaultImplicitWait();
 		return loggedInUser.isDisplayed(); 
 	}

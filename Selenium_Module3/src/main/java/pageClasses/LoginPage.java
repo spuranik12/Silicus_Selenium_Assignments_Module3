@@ -6,8 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import common.BasePage;
 
-public class LoginPage extends BasePage
-{
+public class LoginPage extends BasePage{
 	@FindBy(css = "#txtUsername")
 	private WebElement usernameField;
 	
@@ -21,8 +20,7 @@ public class LoginPage extends BasePage
 		super(driver);
 	}
 	
-	public void loginIntoApplication(String username, String password)
-	{
+	public void loginIntoApplication(String username, String password){
 		actions.applyDefaultImplicitWait();
 		usernameField.sendKeys(username);
 		actions.applyDefaultImplicitWait();
