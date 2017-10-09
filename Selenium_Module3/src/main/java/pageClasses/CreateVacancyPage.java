@@ -29,6 +29,15 @@ public class CreateVacancyPage extends BasePage {
 	@FindBy(css = "#addJobVacancy_publishedInFeed")
 	private WebElement rssCheckBox;
 	
+	@FindBy(css = "#btnSave")
+	private WebElement saveBtn;
+	
+	@FindBy(css = "[value=Edit]")
+	private WebElement editBtn;
+	
+	@FindBy(css = "#btnBack")
+	private WebElement backBtn;
+	
 	public CreateVacancyPage(WebDriver driver) {
 		super(driver);
 	}
@@ -38,13 +47,12 @@ public class CreateVacancyPage extends BasePage {
 		element = jobTitleField;
 		Select selByVal = new Select(element);
 		selByVal.selectByValue("9");
-		
 	}
 	
 	public String verifySelectedJobTitle() {
 		element = jobTitleField;
 		Select selByVal = new Select(element);
-		System.out.println("Job Title is: " + selByVal.getFirstSelectedOption().getText());
+		//System.out.println("Job Title is: " + selByVal.getFirstSelectedOption().getText());
 		return selByVal.getFirstSelectedOption().getText(); 
 	}
 	
@@ -54,7 +62,7 @@ public class CreateVacancyPage extends BasePage {
 	}
 	
 	public String verifyEnteredVacName() {
-		System.out.println("Entered vacancy name: " + vacancyNameField.getAttribute("value")); 
+		//System.out.println("Entered vacancy name: " + vacancyNameField.getAttribute("value")); 
 		return vacancyNameField.getAttribute("value"); 
 	}
 	
@@ -64,7 +72,7 @@ public class CreateVacancyPage extends BasePage {
 	}
 	
 	public String verifyEnteredHiringMgr() {
-		System.out.println("Entered hiring manager is: " + hiringMgrField.getAttribute("value"));
+		//System.out.println("Entered hiring manager is: " + hiringMgrField.getAttribute("value"));
 		return hiringMgrField.getAttribute("value"); 
 	}
 	
@@ -74,7 +82,37 @@ public class CreateVacancyPage extends BasePage {
 	}
 	
 	public String verifyNumOfPositions() {
-		System.out.println("Entered number of positions: " + numOfPositionsField.getText());
-		return numOfPositionsField.getText(); 
+		//System.out.println("Entered number of positions: " + numOfPositionsField.getAttribute("value"));
+		return numOfPositionsField.getAttribute("value"); 
+	}
+	
+	public void enterDescription(String description){
+		actions.applyDefaultImplicitWait();
+		descriptionField.sendKeys(description);
+	}
+	
+	public String verifyEnteredDescription(){
+		//System.out.println("Description entered is: " + descriptionField.getAttribute("value"));
+		return descriptionField.getAttribute("value"); 
+	}
+	
+	public void uncheckRssCheckbox(){
+		actions.applyDefaultImplicitWait();
+		rssCheckBox.click();
+	}
+	
+	public void saveVacancyDetails(){
+		actions.applyDefaultImplicitWait();
+		saveBtn.click();
+	}
+	
+	public boolean verifyEditBtn(){
+		actions.applyImplicitWait(10);
+		//System.out.println("Edit button displayed: " + editBtn.isDisplayed());
+		return editBtn.isDisplayed();
+	}
+	
+	public void goBackToVacancyList(){
+		backBtn.click();
 	}
 }

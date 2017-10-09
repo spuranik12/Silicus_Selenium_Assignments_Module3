@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test">
-              <span class="suite-name border-failed">Test</span>
+              <span class="suite-name border-passed">Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Test">
-                    <span>C:\Users\Shrihari Puranik\git\Silicus_Selenium_Assignments_Module3\Selenium_Module3\TestNG\testng.xml</span>
+                    <span>C:\Users\spuranik\git\Selenium_Assignments\Selenium_Module3\Selenium_Module3\TestNG\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test" class="hide-methods failed suite-Test"> (hide)</a> <!-- hide-methods failed suite-Test -->
-                      <a href="#" panel-name="suite-Test" class="show-methods failed suite-Test"> (show)</a> <!-- show-methods failed suite-Test -->
-                    </span>
-                    <div class="method-list-content failed suite-Test">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="testClasses.RecruitmentPageTest" hash-for-method="addNewVacancy(Assistant CEO, Linda Anderson, 10)">addNewVacancy(Assistant CEO, Linda Anderson, 10)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Test -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,7 +101,17 @@
                     <div class="method-list-content passed suite-Test">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="testClasses.RecruitmentPageTest" hash-for-method="addNewVacancy(Assistant CEO, Linda Anderson, 10, Description added)">addNewVacancy(Assistant CEO, Linda Anderson, 10, Description added)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test" title="testClasses.LoginPageTest" hash-for-method="loginWithValidCredentials(Admin, admin)">loginWithValidCredentials(Admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="testClasses.RecruitmentPageTest" hash-for-method="newVacancyData">newVacancyData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,57 +131,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test" class="panel Test">
-          <div class="suite-Test-class-failed">
+          <div class="suite-Test-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testClasses.RecruitmentPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewVacancy(Assistant CEO, Linda Anderson, 10)">
-                  </a> <!-- addNewVacancy(Assistant CEO, Linda Anderson, 10) -->
+                  <a name="addNewVacancy(Assistant CEO, Linda Anderson, 10, Description added)">
+                  </a> <!-- addNewVacancy(Assistant CEO, Linda Anderson, 10, Description added) -->
                   <span class="method-name">addNewVacancy</span>
-                  <span class="parameters">(Assistant CEO, Linda Anderson, 10)</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [10] but found []
-	at testClasses.RecruitmentPageTest.addNewVacancy(RecruitmentPageTest.java:44)
-... Removed 29 stack frames<br/> java.lang.AssertionError: expected [10] but found []
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at testClasses.RecruitmentPageTest.addNewVacancy(RecruitmentPageTest.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>testClasses.RecruitmentPageTest.addNewVacancy(RecruitmentPageTest.java:44)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Assistant CEO, Linda Anderson, 10, Description added)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newVacancyData">
+                  </a> <!-- newVacancyData -->
+                  <span class="method-name">newVacancyData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openVacancies">
+                  </a> <!-- openVacancies -->
+                  <span class="method-name">openVacancies</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test-class-failed -->
+          </div> <!-- suite-Test-class-passed -->
           <div class="suite-Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -202,25 +177,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test-class-passed -->
-          <div class="suite-Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testClasses.RecruitmentPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="openVacancies">
-                  </a> <!-- openVacancies -->
-                  <span class="method-name">openVacancies</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test-class-passed -->
         </div> <!-- panel Test -->
         <div panel-name="test-xml-Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shrihari Puranik\git\Silicus_Selenium_Assignments_Module3\Selenium_Module3\TestNG\testng.xml</span>
+            <span class="header-content">C:\Users\spuranik\git\Selenium_Assignments\Selenium_Module3\Selenium_Module3\TestNG\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -270,24 +230,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openVacancies')
+data.setCell(0, 1, 'addNewVacancy')
 data.setCell(0, 2, 'testClasses.RecruitmentPageTest')
-data.setCell(0, 3, 8102);
+data.setCell(0, 3, 6752);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithValidCredentials')
-data.setCell(1, 2, 'testClasses.LoginPageTest')
-data.setCell(1, 3, 7120);
+data.setCell(1, 1, 'openVacancies')
+data.setCell(1, 2, 'testClasses.RecruitmentPageTest')
+data.setCell(1, 3, 4583);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addNewVacancy')
-data.setCell(2, 2, 'testClasses.RecruitmentPageTest')
-data.setCell(2, 3, 1474);
+data.setCell(2, 1, 'loginWithValidCredentials')
+data.setCell(2, 2, 'testClasses.LoginPageTest')
+data.setCell(2, 3, 2533);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'newVacancyData')
+data.setCell(3, 2, 'testClasses.RecruitmentPageTest')
+data.setCell(3, 3, 1092);
 window.suiteTableData['Test']= { tableData: data, tableDiv: 'times-div-Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Test">
               </div> <!-- times-div-Test -->
             </div> <!-- times-div -->
@@ -306,7 +270,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testClasses.RecruitmentPageTest</span>
+              <span class="ignored-class-name">testClasses.LoginPageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">closeBrowser</span>
                 <br/>
@@ -322,34 +286,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testClasses.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testClasses.RecruitmentPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials(Admin, admin)</span>
-                <span class="method-start">10417 ms</span>
+                <span class="method-start">9786 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.RecruitmentPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openVacancies</span>
-                <span class="method-start">17537 ms</span>
+                <span class="method-start">12321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addNewVacancy(Assistant CEO, Linda Anderson, 10)</span>
-                <span class="method-start">25643 ms</span>
+                <span class="method-name">addNewVacancy(Assistant CEO, Linda Anderson, 10, Description added)</span>
+                <span class="method-start">16906 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClasses.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">newVacancyData</span>
+                <span class="method-start">23659 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">27119 ms</span>
+                <span class="method-start">24752 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

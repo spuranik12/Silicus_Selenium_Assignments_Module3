@@ -1,23 +1,17 @@
 package testClasses;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageClasses.HomePage;
 import pageClasses.LoginPage;
-
+import utilities.DataProviderClass;
 import common.BaseTest;
 
 public class LoginPageTest extends BaseTest
 { 
 	
-	@DataProvider(name = "Login Authentication")
-	public static Object[][] credentials(){
-		return new Object[][] {{"Admin", "admin"}}; 
-	}
-	
-	@Test(dataProvider = "Login Authentication")
+	@Test(dataProvider = "Login Authentication", dataProviderClass = DataProviderClass.class)
 	public void loginWithValidCredentials(String uname, String pwd)
 	{
 		LoginPage lp = new LoginPage(driver);

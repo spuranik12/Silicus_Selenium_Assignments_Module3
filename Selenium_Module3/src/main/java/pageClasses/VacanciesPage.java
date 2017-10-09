@@ -14,6 +14,9 @@ public class VacanciesPage extends BasePage{
 	@FindBy(xpath = "//input[@id='btnAdd']")
 	private WebElement addVacancyBtn;
 	
+	@FindBy(xpath = "//a[.='Assistant CEO']")
+	private WebElement createdVacName; 
+	
 	public VacanciesPage(WebDriver driver) {
 		super(driver);
 	}
@@ -30,5 +33,10 @@ public class VacanciesPage extends BasePage{
 	public void clickOnAddVacancy() {
 		actions.applyImplicitWait(10);
 		addVacancyBtn.click();
+	}
+	
+	public String verifyCreatedVacancy(){
+		System.out.println("Vacancy created for: " + "'" + createdVacName.getText() + "'");
+		return createdVacName.getText();
 	}
 }
