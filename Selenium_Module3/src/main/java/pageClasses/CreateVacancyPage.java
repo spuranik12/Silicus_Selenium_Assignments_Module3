@@ -9,8 +9,6 @@ import common.BasePage;
 
 public class CreateVacancyPage extends BasePage {
 	
-	WebElement element;
-	
 	@FindBy(css = "#addJobVacancy_jobTitle")
 	private WebElement jobTitleField;
 	
@@ -42,16 +40,14 @@ public class CreateVacancyPage extends BasePage {
 		super(driver);
 	}
 	
+	Select selByVal = new Select(jobTitleField);
+	
 	public void addJobTitle() {
 		actions.applyImplicitWait(10);
-		element = jobTitleField;
-		Select selByVal = new Select(element);
 		selByVal.selectByValue("9");
 	}
 	
 	public String verifySelectedJobTitle() {
-		element = jobTitleField;
-		Select selByVal = new Select(element);
 		//System.out.println("Job Title is: " + selByVal.getFirstSelectedOption().getText());
 		return selByVal.getFirstSelectedOption().getText(); 
 	}

@@ -2,38 +2,20 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Test" duration-ms="25323" started-at="2017-10-09T12:53:09Z" finished-at="2017-10-09T12:53:35Z">
+  <suite name="Test" duration-ms="27868" started-at="2017-10-10T10:07:44Z" finished-at="2017-10-10T10:08:12Z">
     <groups>
     </groups>
-    <test name="OrangeHRM_Login" duration-ms="25323" started-at="2017-10-09T12:53:09Z" finished-at="2017-10-09T12:53:35Z">
-      <class name="testClasses.LoginPageTest">
-        <test-method status="PASS" signature="loginWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:testClasses.LoginPageTest@51565ec2]" name="loginWithValidCredentials" duration-ms="2533" started-at="2017-10-09T18:23:19Z" data-provider="Login Authentication" finished-at="2017-10-09T18:23:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-      </class> <!-- testClasses.LoginPageTest -->
+    <test name="OrangeHRM_Login" duration-ms="27868" started-at="2017-10-10T10:07:44Z" finished-at="2017-10-10T10:08:12Z">
       <class name="testClasses.RecruitmentPageTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="openBrowser" is-config="true" duration-ms="9768" started-at="2017-10-09T18:23:09Z" finished-at="2017-10-09T18:23:19Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="openBrowser" is-config="true" duration-ms="11840" started-at="2017-10-10T15:37:44Z" finished-at="2017-10-10T15:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="openVacancies()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="openVacancies" duration-ms="4583" started-at="2017-10-09T18:23:22Z" finished-at="2017-10-09T18:23:26Z">
+        <test-method status="PASS" signature="openVacancies()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="openVacancies" duration-ms="4114" started-at="2017-10-10T15:37:59Z" finished-at="2017-10-10T15:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openVacancies -->
-        <test-method status="PASS" signature="addNewVacancy(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="addNewVacancy" duration-ms="6752" started-at="2017-10-09T18:23:26Z" data-provider="Vacancy Info" finished-at="2017-10-09T18:23:33Z">
+        <test-method status="PASS" signature="addNewVacancy(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="addNewVacancy" duration-ms="6758" started-at="2017-10-10T15:38:03Z" data-provider="Vacancy Info" finished-at="2017-10-10T15:38:10Z">
           <params>
             <param index="0">
               <value>
@@ -59,15 +41,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewVacancy -->
-        <test-method status="PASS" signature="newVacancyData()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="newVacancyData" duration-ms="1092" started-at="2017-10-09T18:23:33Z" finished-at="2017-10-09T18:23:34Z">
+        <test-method status="PASS" signature="newVacancyData()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="newVacancyData" duration-ms="1088" started-at="2017-10-10T15:38:10Z" finished-at="2017-10-10T15:38:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newVacancyData -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="closeBrowser" is-config="true" duration-ms="567" started-at="2017-10-09T18:23:34Z" finished-at="2017-10-09T18:23:35Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.RecruitmentPageTest@396a51ab]" name="closeBrowser" is-config="true" duration-ms="552" started-at="2017-10-10T15:38:11Z" finished-at="2017-10-10T15:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testClasses.RecruitmentPageTest -->
+      <class name="testClasses.LoginPageTest">
+        <test-method status="PASS" signature="loginWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:testClasses.LoginPageTest@51565ec2]" name="loginWithValidCredentials" duration-ms="3474" started-at="2017-10-10T15:37:56Z" data-provider="Login Authentication" finished-at="2017-10-10T15:37:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+      </class> <!-- testClasses.LoginPageTest -->
     </test> <!-- OrangeHRM_Login -->
   </suite> <!-- Test -->
 </testng-results>
